@@ -3,6 +3,7 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
+    background: url("../images/concrete_seamless.png");
 }
 
 .container {
@@ -10,6 +11,8 @@ body {
     max-width: 960px;
     margin: 40px 0px 20px 60px;
     clear: both;
+    background-color: white;
+    /* padding-bottom: 20px; */
 }
 
 h1 {
