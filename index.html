@@ -6,45 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <header id="headerBar">
-        <div class="container">
-            <a href="index.html" id="headBox">Patrick Moroney</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+    <header class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <a href="index.html" <span class="navbar-brand mb-1 h1">Patrick Moroney</span></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
     </header>
 
-    <div id="main-container" class="container">
+    <div class="container">
 
-        <section class="main-section">
             <h1>About Me</h1>
 
-            <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
+            <div class="row">
 
-            <p>
-                To introduce myself, my name is Patrick Moroney and I am an IT professional
-                with over 20+ years experience. I've held a variety of roles throughout my
-                career ranging from developer, project manager, delivery manager, etc. I've
-                worked for for small and large companies and am comfortable in either
-                environment.
-            </p>
+                <div class="col-lg-3">
+                    <img src="assets/images/cat.jpg" height="125" width="175">
+                </div>
 
-        </section>
+                <div class="col-lg-9">
+                    To introduce myself, my name is Patrick Moroney and I am an IT professional
+                    with over 20+ years experience. I've held a variety of roles throughout my
+                    career ranging from developer, project manager, delivery manager, etc. I've
+                    worked for for small and large companies and am comfortable in either
+                    environment.
+                </div>
+            </div>
 
     </div>
 
-    <footer>
-        <div class="container">
+
+    <footer class="container">
             Copyright &copy;
-        </div>
     </footer>
 
 </body>
