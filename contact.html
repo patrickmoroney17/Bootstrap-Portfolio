@@ -10,50 +10,59 @@
 </head>
 <body>
    
-    <header id="headerBar">
-        <div class="container">
-            <a href="index.html" id="headBox">Patrick Moroney</a>
-            <nav>
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-            </nav>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-        </div>
+            <a href="index.html" <span class="navbar-brand mb-1 h1">Patrick Moroney</span></a>
+
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
     </header>
 
-    <div id="main-container" class="container">
-        <section class="main-section">
-            <h1>Contact</h1>
+    <div class="container">
+        <h1>Contact</h1>
 
-            <form id="contact-form">
-                <ul>
-                    <li>
-                    <label for="name">Name</label>
-                    <input id="name" type="text" name="yourName" placeholder="John Smith" required="required">
-                    </li>
-
-                    <li>
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="yourEmail" placeholder="example@gmail.com" required="required">
-                    </li>
-
-                    <li>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="yourMessage" required="required"></textarea>
-                    </li>
-                </ul>
-                <input type="submit">
-            </form>
-            
-        </section>
+        <form id="contact-form">
+            <ul>
+                <li>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" placeholder="John Smith">
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                </li>
+            </ul>
+            <input type="submit">
+        </form>
     </div>
 
-    <footer>
-        <div class="container">
-            Copyright &copy;
-        </div>
-    </footer>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <span class="navbar-brand mb-1 h1">Copyright &copy</span>
+        </nav>
+    </header>
 
 </body>
 </html>
